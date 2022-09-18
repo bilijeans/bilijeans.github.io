@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="never">
+
+    <title>Document</title>
+    <script src="./jQuery.js"></script>
+    <script src="./navControl.js"></script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        .nav-list {
+            width: 1060px;
+            height: 200px;
+            margin: 0 auto;
+        }
+
+        .nav-list>div {
+            display: flex;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+        .nav-list>div .title{
+            color: rgba(0, 0, 0, .35);
+        }
+        .nav-list>div>div {
+            white-space: nowrap;
+            margin-left: 24px;
+        }
+
+        .nav-list>div>div.active {
+            color: rgb(0, 180, 255);
+        }
+        .manga-list{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 1060px;
+            margin: 0 auto;
+        }
+        .manga-list .wrap{
+            width: 180px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin-bottom: 24px;
+
+        }
+        .manga-list .wrap img{
+            width: 180px;
+        }
+        .manga-list .wrap .name{
+            font-size: 14px;
+            width: 100%;
+            white-space: nowrap;
+        }
+        .manga-list .wrap .status{
+            font-size: 12px;
+            color: rgba(0, 0, 0, .35);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav-list"></div>
+    <div class="manga-list"></div>
+    <script>
+        $(function () {
+            var arr = [
+                [
+                    {
+                        name: '全部',
+                        styleId: -1
+                    },
+                    {
+                        name: '热血',
+                        styleId: 999
+                    },
+                    {
+                        name: '古风',
+                        styleId: 997
+                    },
+                    {
+                        name: '玄幻',
+                        styleId: 1016
+                    },
+                    {
+                        name: '奇幻',
+                        styleId: 998
+                    },
+                    // 都市 1096历史 1092武侠仙侠  1088游戏竞技  
+                    // 1081悬疑灵异 1063架空 1060青春 1054西幻 1048现代 1028正能量 1015科幻
+                    {
+                        name: '悬疑',
+                        styleId: 1023
+                    },
+                    {
+                        name: '都市',
+                        styleId: 1002
+                    },
+                    {
+                        name: '历史',
+                        styleId: 1096
+                    },
+                    {
+                        name: '武侠仙侠',
+                        styleId: 1092
+                    },
+                    {
+                        name: '游戏竞技',
+                        styleId: 1088
+                    },
+                    {
+                        name: '悬疑灵异',
+                        styleId: 1081
+                    },
+                    // 1081悬疑灵异 1063架空 1060青春 1054西幻 1048现代 1028正能量 1015科幻
+
+                    {
+                        name: '架空',
+                        styleId: 1063
+                    },
+                    {
+                        name: '青春',
+                        styleId: 1060
+                    },
+                    {
+                        name: '西幻',
+                        styleId: 1054
+                    },
+                    {
+                        name: '现代',
+                        styleId: 1048
+                    },
+                    {
+                        name: '正能量',
+                        styleId: 1028
+                    },
+                    {
+                        name: '科幻',
+                        styleId: 1015
+                    }
+
+                ],
+                [
+                    {
+                        name: '全部',
+                        areaId: -1
+                    },
+                    {
+                        name: '大陆',
+                        areaId: 1
+                    },
+                    {
+                        name: '日本',
+                        areaId: 2
+                    },
+                    {
+                        name: '韩国',
+                        areaId: 6
+                    },
+                    {
+                        name: '其他',
+                        areaId: 5
+                    }
+
+                ],
+                [
+                    {
+                        name: '全部',
+                        isFinish: -1
+                    },
+                    {
+                        name: '连载',
+                        isFinish: 0
+                    },
+                    {
+                        name: '完结',
+                        isFinish: 1
+                    }
+
+                ],
+                [
+                    {
+                        name: '全部',
+                        isFree: -1
+                    },
+                    {
+                        name: '免费',
+                        isFree: 1
+                    },
+                    {
+                        name: '付费',
+                        isFree: 2
+                    },
+                    {
+                        name: '等就免费',
+                        isFree: 3
+                    }
+
+                ],
+                [
+                    {
+                        name: '人气推荐',
+                        order: 0
+                    },
+                    {
+                        name: '更新时间',
+                        order: 1
+                    },
+                    {
+                        name: '追漫人数',
+                        order: 2
+                    },
+                    {
+                        name: '上架时间',
+                        order: 3
+                    }
+
+                ],
+                [
+                    {
+                        pageNum: 1
+                    }
+                ]
+
+            ]
+
+            var $navList = $('.nav-list')
+            var $mangaList = $('.manga-list')
+
+            console.log($navList);
+            var newNav = new NavControl(arr, $navList,$mangaList)
+        
+
+        })
+        /*
+            https://apis.netstart.cn/bcomic/ClassPage?styleId=999&areaId=-1&isFinish=-1&order=0&pageNum=1&pageSize=39&isFree=-1
+             styleId 题材分类id number -1全部  999热血   997古风  1016玄幻 998奇幻 1023悬疑 1002都市 1096历史 1092武侠仙侠  1088游戏竞技  1081悬疑灵异 1063架空 1060青春 1054西幻 1048现代 1028正能量 1015科幻
+             areaId 地区分类id  number -1全部  1大陆  2日本  6韩国  5其他
+             isFinish 进度分类    number -1全部  0连载  1完结
+             isFree 收费id        number -1全部  1免费  2付费   3等就免费
+             order  排序                  number 0人气推荐 1更新时间 2追漫人数  3上架时间
+             pageNum  页码          number 1
+        */
+
+    </script>
+</body>
+
+</html>
