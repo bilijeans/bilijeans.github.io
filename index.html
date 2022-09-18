@@ -11,10 +11,23 @@
     <script src="./js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <style>
-        .u-info{
+        *{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        body{
+            background: url(./images/background-img.jpg) no-repeat;
+            background-size: cover;
+        }
+        @media screen  {
+            
+        }
+        .u-info {
             width: 150px;
             margin: 20px auto;
         }
+
         .u-info .avatar-container {
             width: 100px;
             height: 100px;
@@ -29,35 +42,81 @@
             background: url(./images/u-avatar-new.jpg) no-repeat;
             background-size: contain;
         }
-        .u-info .u-name{
+
+        .u-info .u-name {
             text-align: center;
             font-size: 20px;
             font-weight: bold;
-            
-            
-        }
-        .body{
 
+
+        }
+
+        .container {
+            color: black;
+        }
+
+        /* .container::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, .3);
+        } */
+        .home-container {
+            text-align: center;
+        }
+
+        .nav li a {
+            color: white;
+        }
+
+        .nav li.active {
+            opacity: .8;
+        }
+
+        .tab-pane {
+            height: 800px;
+            color: white;
+            margin-top: 20px;
+        }
+        .tab-pane .project{
+            position: relative;
+            display: block;
+            width: 100%;
+        }
+
+        .tab-pane .project img{
+            width: 100%;
+            height: auto;
+        }
+        .tab-pane .project p{
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            padding: 10px;
+            margin: 0;
+            z-index: 999;
+            background-color: rgba(0, 0, 0, 0.699);
+        }
+        a{
+            color: white;
         }
     </style>
 </head>
 
 <body>
     <div class="container">
-
-        <div class="visible-lg">
-            <div class="u-info">
-                <div class="avatar-container">
-                    <div class="avatar-self"></div>
-                </div>
-                <div class="u-name">
-                    <span>争取上进的我</span>
-                </div>
+        <div class="u-info">
+            <div class="avatar-container">
+                <div class="avatar-self"></div>
             </div>
-
+            <div class="u-name">
+                <span>争取上进的我</span>
+            </div>
+        </div>
+        <div class="visible-lg visible-md visible-sm visible-xs">
             <div>
-
-                <!-- Nav tabs -->
                 <ul class="nav nav-tabs" role="tablist">
                     <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab"
                             data-toggle="tab">主页</a></li>
@@ -66,21 +125,54 @@
                     <li role="presentation"><a href="#messages" aria-controls="messages" role="tab"
                             data-toggle="tab">项目经历</a></li>
                     <li role="presentation"><a href="#settings" aria-controls="settings" role="tab"
-                            data-toggle="tab">个人经验</a></li>
+                            data-toggle="tab">个人经历</a></li>
                 </ul>
-
-                <!-- Tab panes -->
                 <div class="tab-content">
-                    <div role="tabpanel" class="tab-pane active" id="home">
-
+                    <div role="tabpanel" class="tab-pane active home-container" id="home">
+                        <p>冯应一</p>
+                        <p>学历：本科</p>
+                        <p>毕业院校：五邑大学</p>
                     </div>
-                    <div role="tabpanel" class="tab-pane" id="profile">...</div>
-                    <div role="tabpanel" class="tab-pane" id="messages">...</div>
+                    <div role="tabpanel" class="tab-pane" id="profile">
+                        <p><span>校内工作经历：</span>从读书到毕业，一直任职班内的班干，班长、学习委员、组织委员、宣传委员、体委……</p>
+                        <p><span>校外工作经历：</span> 
+                            家教：在凹凸个性教育公司任职半年；在雅乔教育机构任职1年 <br>
+                            其他工作：在奶茶店担任服务员一个半月；人口普查工作志愿者
+                        </p>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="messages">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 col-xs-12 col-sm-12">
+                                <div class="project">
+                                    <img src="./images/demo-163music.jpg">
+                                    <p class="info">网易云的静态页面</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-xs-12 col-sm-12">
+                                <div class="project">
+                                    <img src="./images/demo-163music.jpg">
+                                    <p class="info">网易云的静态页面</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-xs-12 col-sm-12 project-container">
+                                <a class="project" href="">
+                                    <img src="./images/demo-163music-songlist.jpg">
+                                    <p class="info">网易云推荐歌单播放页面</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                     <div role="tabpanel" class="tab-pane" id="settings">...</div>
                 </div>
-
             </div>
         </div>
+        <div class="visible-xs visible-sm">
+
+        </div>
+        <footer>
+            <p class="e-mail">联系邮箱：2913981879@qq.com</p>
+            <p class="wechat"></p>
+        </footer>
     </div>
     <script>
         $('#myTabs a').click(function (e) {

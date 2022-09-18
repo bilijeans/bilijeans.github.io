@@ -1,0 +1,144 @@
+.footer{
+    width: 100%;
+    height: 175px;
+    font-size: 12px;
+    border-top: 1px solid #d3d3d3;
+    background: #f2f2f2;
+}
+.footer .copy{
+    width: 980px;
+    margin: 0 auto;
+}
+.footer_left{
+    width: 520px;
+    padding-top: 15px;
+    float: left;
+}
+.copy .footer_left p{
+    line-height: 24px;
+    color: #666;
+}
+.copy .footer_left a{
+    color: #666;
+}
+.copy .footer_left a:hover{
+    text-decoration: underline;
+}
+.copy .footer_left p:nth-child(1) a{
+    color: #999;
+}
+.copy .footer_left p:nth-child(1) span{
+    color: #c2c2c2;
+    margin-left: 10px;
+    margin-right: 8px;
+}
+.copy .footer_left p:nth-child(4) .police{
+    margin-left: 5px;
+}
+.copy .footer_left .police_logo{
+    background: url('https://s2.music.126.net/style/web2/img/3rd/police.png?9be4d50696870b370eee47006d6f8b89') no-repeat;
+    width: 14px;
+    height: 14px;
+    margin-right: 2px;
+    display: inline-block;
+    background-size: cover;
+    vertical-align: -2px;
+}
+.copy .footer_right{
+    width: 420px;
+    float: right;
+    margin-top: 33px;
+}
+.copy .footer_right ul li{
+    width: 60px;
+    height: 70px;
+    margin-left: 30px;
+    float: left;
+    text-align: center;
+}
+.copy .footer_right ul li span{
+    margin-top: 5px;
+}
+.copy .footer_right ul li:first-child{
+    margin-left: 0;
+}
+.amped{
+    background: url(../image/foot_enter_new.png) no-repeat -60px -451px;
+    background-size: 104px 545px;
+    display: block;
+    margin: 0 auto;
+    width: 44px;
+    height: 44px;
+}
+.tt-amped{
+    background: url(../image/foot_enter_tt.png) no-repeat 0px -129.82px;
+    background-size: 184.91px 166.36px;
+    display: block;
+    margin-left: -6px;
+    width: 72px;
+    height: 21px;
+}
+.auth{
+    background: url(../image/foot_enter_new.png) no-repeat -60px -100px;
+    background-size: 104px 545px;
+    display: block;
+    margin: 0 auto;
+    width: 44px;
+    height: 44px;
+}
+.tt-auth{
+    background: url(../image/foot_enter_tt.png) no-repeat -4.91px -108.55px;
+    background-size: 184.91px 166.36px;
+    display: block;
+    margin: 0 auto;
+    width: 43.64px;
+    height: 21px;
+}
+.artist{
+    background: url(../image/foot_enter_new.png) no-repeat 0px 0px;
+    background-size: 104px 545px;
+    display: block;
+    margin: 0 auto;
+    width: 44px;
+    height: 44px;
+}
+.tt-artist{
+    background: url(../image/foot_enter_tt.png) no-repeat 0px 0px;
+    background-size: 184.91px 166.36px;
+    display: block;
+    margin: 0 auto;
+    width: 54px;
+    height: 21px;
+}
+.reward{
+    background: url(../image/foot_enter_new.png) no-repeat -60px -50px;
+    background-size: 104px 545px;
+    display: block;
+    margin: 0 auto;
+    width: 44px;
+    height: 44px;
+}
+.tt-reward{
+    background: url(../image/foot_enter_tt.png) no-repeat -16.36px -65.45px;
+    background-size: 184.91px 166.36px;
+    display: block;
+    margin: 0 auto;
+    width: 20.73px;
+    height: 21px;
+}
+.revenue{
+    background: url(../image/foot_enter_new.png) no-repeat 0px -100px;
+    background-size: 104px 545px;
+    display: block;
+    margin: 0 auto;
+    width: 44px;
+    height: 44px;
+}
+.tt-revenue{
+    background: url(../image/foot_enter_tt.png) no-repeat -4.91px -87.27px;
+    background-size: 184.91px 166.36px;
+    display: block;
+    margin: 0 auto;
+    width: 43.64px;
+    height: 21px;
+}

@@ -1,0 +1,92 @@
+
+.main .items{
+    width: 980px;
+    margin: 0 auto;
+    border: 1px solid #d3d3d3;
+    border-width: 0 1px;
+    overflow: hidden;
+    background: url(../image/main_background.png);
+}
+.main .items .item_left{
+    float: left;
+}
+.main .items .item_left .list_wrap{
+    width: 729px;
+}
+.main .items .item_left .list_wrap .list_song{
+    width: 689px;
+    padding: 20px 20px 40px 20px;
+}
+.main .items .item_left .list_wrap .list_song .list_hd{
+    height: 33px;
+    width: 680px;
+    /* display: flex; */
+    border-bottom: 2px solid #c10d0c;
+    padding-right: 10px;
+}
+.main .items .item_left .list_wrap .list_song .list_hd .logo{
+    width: 35px;
+    height: 35px;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    float: left;
+}
+.main .items .item_left .list_wrap .list_song .list_hd .logo .ico{
+    background: url(../image/index.png) no-repeat -235px -164px;
+    width: 14px;
+    height: 14px;
+    margin-top: 6.5px;
+    margin-left: 10.5px;
+}
+.main .items .item_left .list_wrap .list_song .list_hd .tit{
+    color: #333;
+    font-size: 20px;
+    /* display: block; */
+    float: left;
+}
+.main .items .item_left .list_wrap .list_song .list_hd .tab{
+    color: #666;
+    margin-left: 20px;
+    font-size: 12px;
+    float: left;
+    margin-top: 7px;
+    /* line-height: 30px; */
+    /* display: flex; */
+    /* align-items: center; */
+    /* align-items: flex-end; */
+}
+.main .items .item_left .list_wrap .list_song .list_hd .tab a:hover{
+    text-decoration: underline;
+}
+.main .items .item_left .list_wrap .list_song .list_hd .tab a{
+    /* font-size: 12px; */
+    color: #666;
+    /* text-decoration: underline; */
+}
+
+.main .items .item_left .list_wrap .list_song .list_hd .tab span{
+    margin: 0 10px;
+    color: #ccc;
+}
+.main .items .item_left .list_wrap .list_song .list_hd .more{
+    display: flex;
+    float: right;
+    align-items: flex-end;
+    margin-top: 9px;
+}
+.main .items .item_left .list_wrap .list_song .list_hd .more a:hover{
+    text-decoration: underline;
+}
+.main .items .item_left .list_wrap .list_song .list_hd .more a{
+    font-size: 12px;
+    color: #666;
+    display: flex;
+}
+.main .items .item_left .list_wrap .list_song .list_hd .more .arr{
+    background: url(../image/index.png) no-repeat 0 -240px;
+    width: 12px;
+    height: 12px;
+    display: flex;
+    margin-left: 4px;
+}

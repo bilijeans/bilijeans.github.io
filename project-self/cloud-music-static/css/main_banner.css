@@ -1,0 +1,163 @@
+.main .banner{
+    height: 285px;
+    background: url(../image/100000011.jpg) no-repeat;
+    background-size: 6000px;
+    background-position: center center;
+}
+.main .banner .banner_items{
+    width: 980px;
+    height: 285px;
+    background-color: aliceblue;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+}
+.main .banner .banner_items .flag{
+    background: url(../image/10000001.jpg) no-repeat;
+    background-size: cover;
+    width: 730px;
+    height: 285px;
+    position: relative;
+}
+.main .banner .banner_items .flag .flag_img{
+    background: url(../image/10000001.jpg) no-repeat;
+    background-size: cover;
+    width: 730px;
+    height: 285px;
+    display: none;
+}
+.main .banner .dots_banner{
+    position: absolute;
+    width: 730px;
+    height: 20px;
+    left: 0;
+    bottom: 6px;
+}
+.main .banner .dots_banner ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main .banner .dots_banner ul li{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main .banner .dots_banner .dot{
+    background: url(../image/banner.png) no-repeat 3px -343px;
+    display: block;
+
+    width: 20px;
+    height: 20px;
+}
+.main .banner .dots_banner ul li:first-child .dot,
+.main .banner .dots_banner ul li:hover .dot{
+    background: url(../image/banner.png) no-repeat -16px -343px;
+}
+.main .banner .dots_banner ul li:active .dot{
+    background: url(../image/banner.png) no-repeat -16px -343px;
+}
+.download{
+    background: url(../image/download.png) no-repeat 0px 0px;
+    width: 250px;
+    height: 285px;
+}
+.download a{
+    display: block;
+    width: 215px;
+    height: 56px;
+    margin: 186px 0 0 19px;
+}
+.download a:hover{
+    background: url(../image/download.png) no-repeat 0 -290px;
+}
+.download p{
+    color: #8d8d8d;
+    margin: 10px auto;
+    text-align: center;
+    font-size: 12px;
+}
+.banner .banner_items .arr_left{
+    background: url(../image/banner.png) no-repeat 0px -359px;
+    display: block;
+    width: 37px;
+    height: 63px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -68px;
+    margin: auto;
+}
+.banner .banner_items .arr_left:hover{
+    background-position: 0 -429px;
+}
+.banner .banner_items .arr_right{
+    background: url(../image/banner.png) no-repeat 0px -507px;
+    width: 37px;
+    height: 63px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -68px;
+    margin: auto;
+}
+.banner .banner_items .arr_right:hover{
+    background-position: 0 -577px;
+}
+#flag_img1:target{
+    background: url(../image/10000001.jpg);
+    background-size: cover;
+    display: block;
+}
+#flag_img2:target{
+    background: url(../image/10000002.jpg);
+    background-size: cover;
+    display: block;
+}
+#flag_img3:target{
+    background: url(../image/10000003.jpg);
+    background-size: cover;
+    display: block;
+}
+#flag_img4:target{
+    background: url(../image/10000004.jpg);
+    background-size: cover;
+    display: block;
+}
+#flag_img5:target{
+    background: url(../image/10000005.jpg);
+    background-size: cover;
+    display: block;
+}
+#flag_img6:target{
+    background: url(../image/10000006.jpg);
+    background-size: cover;
+    display: block;
+}
+#flag_img7:target{
+    background: url(../image/10000002.jpg);
+    background-size: cover;
+    display: block;
+}
+#flag_img2:target{
+    background: url(../image/10000007.jpg);
+    background-size: cover;
+    display: block;
+}
+#flag_img8:target{
+    background: url(../image/10000008.jpg);
+    background-size: cover;
+    display: block;
+}
+#flag_img9:target{
+    background: url(../image/10000009.jpg);
+    background-size: cover;
+    display: block;
+}
+#flag_img10:target{
+    background: url(../image/10000010.jpg);
+    background-size: cover;
+    display: block;
+}

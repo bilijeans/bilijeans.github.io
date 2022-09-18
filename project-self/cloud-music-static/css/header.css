@@ -1,0 +1,240 @@
+.header{
+    width: 100%;
+    background-color: #333333;
+    margin: 0 auto;
+}
+.header .top
+{
+    width: 1100px;
+    margin: 0 auto;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #333333;
+}
+.header .top .left{
+    height: 70px;
+    display: flex;
+
+}
+.header .top .left>a{
+    display: block;
+    width: 170px;
+    height: 70px;
+}
+.header .top .left a .logo{
+    background-image: url('../image/topbar.png');
+    height: 70px;
+    width: 170px;
+    background-color: #333333;
+}
+.header .top .left>ul{
+    display: flex;
+}
+
+.header .top .left>ul li a{
+    display: flex;
+    align-items: center;
+    position: relative;
+    /* white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip; */
+    font-size: 14px;
+    height: 70px;
+    padding: 0 19px;
+    color: #ccc;
+}
+.header .top .left>ul li:first-child a,
+.header .top .left>ul li a:hover{
+    background-color: black;
+    color: white;
+}
+.header .top .left>ul li:first-child a::after{
+    content: "";
+    position: absolute;
+    background: url(../image/topbar.png) no-repeat -226px 0;
+    width: 12px;
+    height: 6px;
+    top: 64px;
+    right: 41px;
+}
+.header .top .left>ul li:last-child a::after{
+    content: "";
+    position: absolute;
+    background: url(../image/topbar.png) no-repeat -192px 0;
+    width: 26px;
+    height: 13px;
+    top: 21px;
+    right: -19px;
+}
+
+.header .top .right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 22px;
+}
+.header .top .right .search{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: white;
+    width: 158px;
+    height: 32px;
+    border-radius: 16px; 
+}
+.header .top .right .search .logo{
+    background: url(../image/topbar.png) no-repeat -10px -108px;
+    width: 13px;
+    height: 14px;
+}
+.header .top .right .search input{
+    width: 121px;
+    height: 16px;
+    color: #9b9b9b;
+}
+.header .top .right>.btn{
+    display: flex;
+    width: 88px;
+    height: 30px;
+    border: 1px solid #4f4f4f;
+    border-radius: 20px;
+    font-size: 12px;
+    justify-content: center;
+    align-items: center;
+    color: #ccc;
+    margin-left: 12px;
+}
+.header .top .right>.btn:hover{
+    border: 1px solid white;
+    color: white;
+}
+.header .top .right>.unlogin{
+    margin-left: 20px;
+    font-size: 12px;
+    color: #787878;
+}
+.header .top .right>.unlogin:hover{
+    text-decoration: underline;
+}
+.header .top .right .login .avatar_box{
+    height: 70px;
+    padding-right: 22px;
+display: flex;
+align-items: center;
+    position: relative;
+}
+.header .top .right .login .avatar_box .arrow{
+    display: none;
+    position: absolute;
+    background: url(../image/toplist.png) no-repeat -20px 0;
+    width: 14px;
+    height: 8px;
+    top: 50px;
+    left: 29px;
+}
+.header .top .right .login .avatar_box img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+.header .top .right .login .avatar_box::after{
+    content: "75";
+    position: absolute;
+    background-color: #c20c20;
+    color: white;
+    font-size: 8px;
+    border: 1px solid #242424;
+    border-radius: 18px;
+    top: 15px;
+    right: 10px;
+    padding: 0 4px;
+    height: 15px;
+    width: 13px;
+    font-weight: 500;
+}
+.header .top .right .login .avatar_box:hover .arrow,
+.header .top .right .login .avatar_box:hover .list{
+    display: block;
+}
+.header .top .right .login:hover .avatar_box::after{
+    visibility: hidden;
+}
+.header .top .right .login .avatar_box .list{
+    content: "";
+    position: absolute;
+    display: none;
+    top: 57px;
+    left: -40px;
+    width: 158px;
+    border: 1px solid #202020;
+    border-radius: 4px;
+    background-color: #2b2b2b;
+    box-shadow: 0 8px 24px 0 rgb(0 0 0 / 50%);
+    z-index: 5;
+}
+.header .top .right .login .avatar_box .list ul li{
+    /* display: flex; */
+    /* float: left; */
+    width: 158px;
+    height: 34px;
+}
+.header .top .right .login .avatar_box .list ul li a>div{
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 10px;
+    /* background-color: red; */
+}
+.header .top .right .login .avatar_box .list ul li a .hm{
+    background: url(../image/toplist.png) no-repeat -1px -82px;
+    width: 14px;
+    height: 14px;
+}
+.header .top .right .login .avatar_box .list ul li a .msg{
+    background: url(../image/toplist.png) no-repeat -21px -123px;
+    width: 16px;
+    height: 13px;
+}
+.header .top .right .login .avatar_box .list ul li a .level{
+    background: url(../image/toplist.png) no-repeat -1px -101px;
+    width: 14px;
+    height: 17px;
+}
+.header .top .right .login .avatar_box .list ul li a .mbr{
+    background: url(../image/toplist.png) no-repeat 0px -222px;
+    width: 18px;
+    height: 15px;
+}
+.header .top .right .login .avatar_box .list ul li a .st{
+    background: url(../image/toplist.png) no-repeat -1px -142px;
+    width: 14px;
+    height: 14px;
+}
+.header .top .right .login .avatar_box .list ul li a .verify{
+    background: url(../image/toplist.png) no-repeat -21px -143px;
+    width: 14px;
+    height: 16px;
+}
+.header .top .right .login .avatar_box .list ul li a .ex{
+    background: url(../image/toplist.png) no-repeat -1px -202px;
+    width: 14px;
+    height: 14px;
+}
+
+.header .top .right .login .avatar_box .list ul li a{
+    color: #ccc;
+    line-height: 34px;
+    font-size: 12px;
+    padding-left: 24px;
+    display: flex;
+    align-items: center;
+}
+.header .top .right .login .avatar_box .list ul li a:hover{
+    background-color: #353535;
+    color: #fff;
+
+}

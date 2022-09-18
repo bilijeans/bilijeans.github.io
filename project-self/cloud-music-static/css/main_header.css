@@ -1,0 +1,57 @@
+.main .main_header{
+    background-color: #c20c0c;
+}
+.genre{
+    width: 1100px;
+    background-color: #c20c0c;
+    height: 34px;
+    border-bottom: 1px solid #a40011;
+    margin: 0 auto;
+    /* padding-left: 180px; */
+}
+.main .genre ul{
+    width: 564px;
+    height: 34px;
+    padding-left: 175px;
+}
+.main .genre ul li{
+    float: left;
+    /* position: relative; */
+}
+.main .genre ul a{
+    /* display: block; */
+    height: 34px;
+    display: flex;
+    align-items: center;
+}
+.main .genre ul li:first-child a div,
+.main .genre ul a:hover div{
+    background-color: #9b0909;
+}
+.main .genre ul li:nth-child(3) a div{
+    position: relative;
+}
+.main .genre ul li:nth-child(3) a div::after{
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url(../image/white-r-icon@3x.png);
+    background-size: cover;
+    top: 3px;
+    right: 5px;
+    width: 8px;
+    height: 8px;
+}
+.main .genre ul a div{
+    /* background-color: #9b0909; */
+    border-radius: 20px;
+    display: flex;
+    margin: 0 17px;
+    /* align-items: center; */
+}
+.main .genre ul a div em{
+    padding: 0 13px;
+    color: #fff;
+    font-size: 12px;
+    line-height: 21px;
+}
