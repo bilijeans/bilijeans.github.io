@@ -137,16 +137,28 @@
     </div>
     <script>
         $(function () {
+            let $navLi = $('.visible-lg .nav-tabs li')
+            let $li = $('.hidden-lg .job-container li')
+            let $nav = $('.hidden-lg .left-nav li')
+            let $navTab = $('.visible-lg .tab-content .tab-pane')
+            let index = 0
+            $navLi.on('click',(e)=>{
+                console.log(e.currentTarget);
+                for(let i=0;i<$navLi.length;i++){
+                    if($navLi[i]==e.currentTarget){
+                        index = i
+                        break
+                    }
+                }
+            })
             $('#myTabs a').click(function (e) {
                 e.preventDefault()
                 $(this).tab('show')
             })
-            let li = $('.hidden-lg .job-container li')
-            let nav = $('.hidden-lg .left-nav li')
-            let index = 0
+
             $('.hidden-lg .left-nav').on('click', 'li', (e) => {
-                for (let i = 0; i < nav.length; i++) {
-                    if (e.target == nav[i]) {
+                for (let i = 0; i < $nav.length; i++) {
+                    if (e.target == $nav[i]) {
                         index = i
                         break
                     }
@@ -156,16 +168,28 @@
                 render()
             })
             function render() {
-                for (let i = 0; i < li.length; i++) {
-                    li.eq(i).removeClass('active')
+                for (let i = 0; i < $li.length; i++) {
+                    $li.eq(i).removeClass('active')
+                    $navLi.eq(i).removeClass('active')
+                    $navTab.eq(i).removeClass('active')
                     if (index == i) {
-                        li.eq(i).addClass('active')
+                        $li.eq(i).addClass('active')
+                        $navLi.eq(i).addClass('active')
+                        $navTab.eq(i).addClass('active')
                     }
                 }
                 if (index == 2) {
                     $('.u-info').hide()
                 } else {
                     $('.u-info').show()
+                }
+            }
+            onresize = (e)=>{
+                console.log(e.currentTarget.innerHeight,e.currentTarget.innerWidth);
+                if(e.currentTarget.innerWidth>1200){
+                    $('.u-info').show()
+                }else{
+                    render()
                 }
             }
         })
