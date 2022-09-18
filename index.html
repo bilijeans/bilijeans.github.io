@@ -10,99 +10,7 @@
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <style>
-        *{
-            padding: 0;
-            margin: 0;
-            list-style: none;
-        }
-        body{
-            background: url(./images/background-img.jpg) no-repeat;
-            background-size: cover;
-        }
-        @media screen  {
-            
-        }
-        .u-info {
-            width: 150px;
-            margin: 20px auto;
-        }
-
-        .u-info .avatar-container {
-            width: 100px;
-            height: 100px;
-            border-radius: 999px;
-            overflow: hidden;
-            margin: 20px auto;
-        }
-
-        .u-info .avatar-self {
-            width: 100%;
-            height: 100%;
-            background: url(./images/u-avatar-new.jpg) no-repeat;
-            background-size: contain;
-        }
-
-        .u-info .u-name {
-            text-align: center;
-            font-size: 20px;
-            font-weight: bold;
-
-
-        }
-
-        .container {
-            color: black;
-        }
-
-        /* .container::before{
-            content: '';
-            position: absolute;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, .3);
-        } */
-        .home-container {
-            text-align: center;
-        }
-
-        .nav li a {
-            color: white;
-        }
-
-        .nav li.active {
-            opacity: .8;
-        }
-
-        .tab-pane {
-            height: 800px;
-            color: white;
-            margin-top: 20px;
-        }
-        .tab-pane .project{
-            position: relative;
-            display: block;
-            width: 100%;
-        }
-
-        .tab-pane .project img{
-            width: 100%;
-            height: auto;
-        }
-        .tab-pane .project p{
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            padding: 10px;
-            margin: 0;
-            z-index: 999;
-            background-color: rgba(0, 0, 0, 0.699);
-        }
-        a{
-            color: white;
-        }
-    </style>
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 
 <body>
@@ -115,7 +23,7 @@
                 <span>争取上进的我</span>
             </div>
         </div>
-        <div class="visible-lg visible-md visible-sm visible-xs">
+        <div class="visible-lg">
             <div>
                 <ul class="nav nav-tabs" role="tablist">
                     <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab"
@@ -124,50 +32,103 @@
                             data-toggle="tab">工作经历</a></li>
                     <li role="presentation"><a href="#messages" aria-controls="messages" role="tab"
                             data-toggle="tab">项目经历</a></li>
-                    <li role="presentation"><a href="#settings" aria-controls="settings" role="tab"
-                            data-toggle="tab">个人经历</a></li>
                 </ul>
                 <div class="tab-content">
                     <div role="tabpanel" class="tab-pane active home-container" id="home">
                         <p>冯应一</p>
                         <p>学历：本科</p>
                         <p>毕业院校：五邑大学</p>
+                        <p>熟悉H5开发</p>
+                        <p>熟悉各种Web标准规范，熟悉HTML5和CSS3等前端开发技术；</p>
+                        <p>熟练使用JavaScript常用框架，熟练使用jquery 框架、Ajax、DOM、JSON等相关技术；</p>
+                        <p>掌握一个项目上线前的所有开发流程、Web性能优化、体验优化、JS的最新版本ES6，结合最流行的打包工具Webpack，</p>
                     </div>
                     <div role="tabpanel" class="tab-pane" id="profile">
                         <p><span>校内工作经历：</span>从读书到毕业，一直任职班内的班干，班长、学习委员、组织委员、宣传委员、体委……</p>
-                        <p><span>校外工作经历：</span> 
+                        <p><span>校外工作经历：</span>
                             家教：在凹凸个性教育公司任职半年；在雅乔教育机构任职1年 <br>
                             其他工作：在奶茶店担任服务员一个半月；人口普查工作志愿者
                         </p>
                     </div>
                     <div role="tabpanel" class="tab-pane" id="messages">
                         <div class="row">
-                            <div class="col-lg-4 col-md-6 col-xs-12 col-sm-12">
-                                <a class="project" href="https://bilijeans.github.io/project-self/cloud-music-static/cloud-music-static-index.html">
+                            <div class="col-lg-4 col-md-6 col-xs-12 col-sm-12 project-container">
+                                <a class="project"
+                                    href="https://bilijeans.github.io/project-self/cloud-music-static/cloud-music-static-index.html">
                                     <img src="./images/demo-163music.jpg">
                                     <p class="info">网易云的静态页面</p>
                                 </a>
                             </div>
-                            <div class="col-lg-4 col-md-6 col-xs-12 col-sm-12" href="https://bilijeans.github.io/project-self/cloud-music-static/cloud-music-static-index.html">
-                                <div class="project">
+                            <div class="col-lg-4 col-md-6 col-xs-12 col-sm-12 project-container">
+                                <a class="project"
+                                    href="https://bilijeans.github.io/project-self/cloud-music-static/cloud-music-static-index.html">
                                     <img src="./images/demo-163music.jpg">
                                     <p class="info">网易云的静态页面</p>
-                                </div>
+                                </a>
                             </div>
                             <div class="col-lg-4 col-md-6 col-xs-12 col-sm-12 project-container">
-                                <a class="project" href="https://bilijeans.github.io/project-self/cloud-music-play/cloud-music-play-index.html">
+                                <a class="project"
+                                    href="https://bilijeans.github.io/project-self/cloud-music-play/cloud-music-play-index.html">
                                     <img src="./images/demo-163music-songlist.jpg">
                                     <p class="info">网易云推荐歌单播放页面</p>
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <div role="tabpanel" class="tab-pane" id="settings">...</div>
                 </div>
             </div>
         </div>
-        <div class="visible-xs visible-sm">
-
+        <div class="hidden-lg">
+            <div class="left-nav">
+                <ul>
+                    <li class="btn active">主页</li>
+                    <li class="btn">工作经历</li>
+                    <li class="btn">项目经历</li>
+                </ul>
+            </div>
+            <ul class="job-container">
+                <li class="home active">
+                    <p>冯应一</p>
+                    <p>学历：本科</p>
+                    <p>毕业院校：五邑大学</p>
+                    <p>熟悉H5开发</p>
+                    <p>熟悉各种Web标准规范，熟悉HTML5和CSS3等前端开发技术；</p>
+                    <p>熟练使用JavaScript常用框架，熟练使用jquery 框架、Ajax、DOM、JSON等相关技术；</p>
+                    <p>掌握一个项目上线前的所有开发流程、Web性能优化、体验优化、JS的最新版本ES6，结合最流行的打包工具Webpack，</p>
+                </li>
+                <li class="work">
+                    <p><span>校内工作经历：</span>从读书到毕业，一直任职班内的班干，班长、学习委员、组织委员、宣传委员、体委……</p>
+                    <p><span>校外工作经历：</span>
+                        家教：在凹凸个性教育公司任职半年；在雅乔教育机构任职1年 <br>
+                        其他工作：在奶茶店担任服务员一个半月；人口普查工作志愿者
+                    </p>
+                </li>
+                <li class="project-self">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-12 col-xs-12 col-sm-12 project-container">
+                            <a class="project"
+                                href="https://bilijeans.github.io/project-self/cloud-music-static/cloud-music-static-index.html">
+                                <img src="./images/demo-163music.jpg">
+                                <p class="info">网易云的静态页面</p>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-xs-12 col-sm-12 project-container">
+                            <a class="project"
+                                href="https://bilijeans.github.io/project-self/cloud-music-static/cloud-music-static-index.html">
+                                <img src="./images/demo-163music.jpg">
+                                <p class="info">网易云的静态页面</p>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-xs-12 col-sm-12 project-container">
+                            <a class="project"
+                                href="https://bilijeans.github.io/project-self/cloud-music-play/cloud-music-play-index.html">
+                                <img src="./images/demo-163music-songlist.jpg">
+                                <p class="info">网易云推荐歌单播放页面</p>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
         </div>
         <footer>
             <p class="e-mail">联系邮箱：2913981879@qq.com</p>
@@ -175,10 +136,40 @@
         </footer>
     </div>
     <script>
-        $('#myTabs a').click(function (e) {
-            e.preventDefault()
-            $(this).tab('show')
+        $(function () {
+            $('#myTabs a').click(function (e) {
+                e.preventDefault()
+                $(this).tab('show')
+            })
+            let li = $('.hidden-lg .job-container li')
+            let nav = $('.hidden-lg .left-nav li')
+            let index = 0
+            $('.hidden-lg .left-nav').on('click', 'li', (e) => {
+                for (let i = 0; i < nav.length; i++) {
+                    if (e.target == nav[i]) {
+                        index = i
+                        break
+                    }
+                }
+                $(e.target).siblings().removeClass('active')
+                $(e.target).addClass('active')
+                render()
+            })
+            function render() {
+                for (let i = 0; i < li.length; i++) {
+                    li.eq(i).removeClass('active')
+                    if (index == i) {
+                        li.eq(i).addClass('active')
+                    }
+                }
+                if (index == 2) {
+                    $('.u-info').hide()
+                } else {
+                    $('.u-info').show()
+                }
+            }
         })
+
     </script>
 </body>
 

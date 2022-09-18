@@ -1,0 +1,151 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+body{
+    background: url(../images/background-img.jpg) no-repeat;
+    background-size: cover;
+    background-attachment:fixed
+}
+.u-info {
+    position: fixed;
+    top: 100px;
+    left: 0;
+    right: 0;
+    width: 150px;
+    margin: auto;
+}
+
+.u-info .avatar-container {
+    width: 100px;
+    height: 100px;
+    border-radius: 999px;
+    overflow: hidden;
+    margin: 20px auto;
+}
+
+.u-info .avatar-self {
+    width: 100%;
+    height: 100%;
+    background: url(../images/u-avatar-new.jpg) no-repeat;
+    background-size: contain;
+}
+
+.u-info .u-name {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+
+}
+
+.container {
+    color: black;
+    margin-top: 300px;
+}
+
+/* .container::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .3);
+} */
+.home-container {
+    text-align: center;
+}
+
+.nav li a {
+    color: white;
+}
+.nav li:hover a{
+    color: white;
+    background-color: rgb(93, 93, 255);
+}
+
+.nav li.active {
+    opacity: .8;
+
+}
+.nav li.active a{
+    font-weight: bold;
+    color: black;
+}
+.tab-pane {
+    color: white;
+    margin-top: 20px;
+
+}
+.tab-pane .project{
+    position: relative;
+    display: block;
+    width: 100%;
+    color: white;
+}
+.tab-pane  .project-container{
+    margin-bottom: 20px;
+}
+
+.tab-pane .project img{
+    width: 100%;
+    height: auto;
+}
+.tab-pane .project p{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.699);
+}
+footer{
+    margin-top: 50px;
+    color: white;
+}
+
+.left-nav{
+    position: fixed;
+    right: 20px;
+    top: 50px;
+}
+.hidden-lg{
+    color: white;
+    text-align: center;
+}
+.left-nav ul{
+    display: flex;
+    flex-direction: column;
+}
+.hidden-lg .job-container li{
+    display: none;
+}
+.hidden-lg .job-container li.active{
+    display: block;
+}
+.job-container .project-self{
+    position: relative;
+    display: block;
+    width: 90%;
+    color: white;
+    margin-top: -200px;
+}
+.job-container  .project-container{
+    margin-bottom: 20px;
+}
+
+.job-container .project img{
+    width: 100%;
+    height: auto;
+}
+.job-container .project p{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.699);
+}

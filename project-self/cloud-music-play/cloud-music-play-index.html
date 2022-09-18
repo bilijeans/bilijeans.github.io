@@ -7,17 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="./jquery-3.6.0.min.js"></script>
-    <script src="./music-list.js"></script>
-    <script src="./playbar.js"></script>
     <style>
         * {
             margin: 0;
             padding: 0;
             list-style: none;
         }
-        h1{
+
+        h1 {
             text-align: center;
         }
+
         .songs-container {
             width: 500px;
             border: 1px solid red;
@@ -75,19 +75,20 @@
             bottom: 0;
             width: 100%;
             height: 60px;
-            
+
             /* border: 1px solid red; */
             background-color: rgba(0, 0, 0, 0.8);
         }
 
         .play-bar .container {
-            
+
             position: relative;
             width: 800px;
             padding-top: 5px;
             margin: 0 auto;
         }
-        .play-bar .container::after{
+
+        .play-bar .container::after {
             content: '';
             display: block;
             clear: both;
@@ -119,6 +120,7 @@
             padding-left: 20px;
             margin: 0 auto;
         }
+
         .play-bar .play-controls .btns .btn {
             margin: 0 10px;
         }
@@ -286,10 +288,12 @@
             height: 300px;
             overflow: auto;
         }
+
         .play-bar .container .list .song-list .list-items::-webkit-scrollbar {
             width: 2px;
             height: 0px;
         }
+
         .play-bar .container .list .song-list .list-items::-webkit-scrollbar-thumb {
             border-radius: 1rem;
             background-color: rgb(91, 93, 94);
@@ -350,19 +354,23 @@
             color: #eee;
             text-align: center;
         }
-        .play-bar .container .list .song-list .song-lrc .lrc{
+
+        .play-bar .container .list .song-list .song-lrc .lrc {
             color: #aaa;
             height: 30px;
             line-height: 30px;
             overflow: hidden;
         }
-        .play-bar .container .list .song-list .song-lrc .title{
+
+        .play-bar .container .list .song-list .song-lrc .title {
             margin-bottom: 0;
         }
+
         .play-bar .container .list .song-list .song-lrc::-webkit-scrollbar {
             width: 2px;
             height: 0px;
         }
+
         .play-bar .container .list .song-list .song-lrc::-webkit-scrollbar-thumb {
             border-radius: 1rem;
             background-color: rgb(91, 93, 94);
@@ -407,10 +415,9 @@
             let playBar = new PlayBar()
             playBar.init()
         })
-
-
-
     </script>
+    <script src="./music-list.js"></script>
+    <script src="./playbar.js"></script>
 </body>
 
 </html>
